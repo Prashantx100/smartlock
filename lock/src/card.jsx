@@ -27,6 +27,7 @@ const SmartLockCard = ({ products, productTitle }) => {
                     {selectedProduct.title}
                 </div>
                 <div className="flex items-center mb-2">
+                <span className="mr-2 font-bold">Color : </span>
                     {selectedProduct.colorOptions.map((color, index) => (
                         <div
                             key={index}
