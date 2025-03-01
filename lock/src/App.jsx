@@ -2,6 +2,7 @@ import React from 'react';
 import SmartLockCard from './card';
 import blackLock from './images/smart_lock_pli_black__artboard_1.webp';
 import roseGoldLock from './images/smart_lock_pli_rose_gold__artboard_1_1.webp';
+import KeyFeatures from './feature';
 
 const App = () => {
     const products = [
@@ -40,12 +41,15 @@ const App = () => {
     ];
 
     return (
+        <>
         <div className="flex flex-wrap justify-center">
             <SmartLockCard products={products} productTitle={'ATOMBERG AZHERO SMART DOOR LOCK'} />
             <SmartLockCard products={products} productTitle={'ATOMBERG SL 1'} />
             <SmartLockCard products={products} productTitle={'ATOMBERG AZHERO SMART DOOR LOCK'} />
             <SmartLockCard products={products} productTitle={'ATOMBERG SL 1'} />
         </div>
+        <KeyFeatures/>
+        </>
     );
 };
 
